@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="QuantumEssentials:jar">
-    <output-path>$USER_HOME$/Desktop/Plugin</output-path>
-    <root id="archive" name="QuantumEssentials.jar">
-      <element id="module-output" name="QuantumEssentials" />
-    </root>
-  </artifact>
-</component>
