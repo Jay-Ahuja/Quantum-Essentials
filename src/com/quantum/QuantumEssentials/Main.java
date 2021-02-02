@@ -22,6 +22,8 @@ public class Main extends JavaPlugin {
 		getCommand("kit").setExecutor(new kitCommand());
 		getCommand("stats").setExecutor(new statsCommand());
 		getCommand("fly").setExecutor(new flyCommand());
+		getCommand("feed").setExecutor(new feedCommand());
+		getCommand("heal").setExecutor(new healCommand());
 
 		// Events
 
