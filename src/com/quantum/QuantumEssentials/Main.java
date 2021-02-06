@@ -3,6 +3,7 @@ package com.quantum.QuantumEssentials;
 import com.quantum.QuantumEssentials.commands.*;
 import com.quantum.QuantumEssentials.events.PlayerJoinMessage;
 import com.quantum.QuantumEssentials.events.PlayerLeaveMessage;
+import com.quantum.QuantumEssentials.events.enchantingEventTHing;
 import com.quantum.QuantumEssentials.items.ItemManager;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -24,11 +25,13 @@ public class Main extends JavaPlugin {
 		getCommand("fly").setExecutor(new flyCommand());
 		getCommand("feed").setExecutor(new feedCommand());
 		getCommand("heal").setExecutor(new healCommand());
+		getCommand("todo").setExecutor(new todoCommand());
 
 		// Events
 
 		getServer().getPluginManager().registerEvents(new PlayerJoinMessage(), this);
 		getServer().getPluginManager().registerEvents(new PlayerLeaveMessage(), this);
+		getServer().getPluginManager().registerEvents(new enchantingEventTHing(), this);
 	}
 	
 	@Override
